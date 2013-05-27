@@ -1,0 +1,302 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="photoflare,&quot;photoflare2013&quot;,pcgec,photography,click,goa,engineering,college,festival,competition,event,fest,&quot;college festival&quot;,engicos,ponda,gec" />
+		<meta name="language" content="en-GB" />
+		<meta name="description" content="PhotoFlare is an annual photography festival organised by the Photography Club of GEC,Goa Engineering College, Ponda, Goa. PhotoFlare 2013 will be held on 10th-11th May 2013 at Kala Academy, Panaji, Goa. " />
+  
+		<title>PhotoFlare 2013 | The International Photography Festival</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+		<script src="js/jquery.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/code.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+#header {
+    height:100%;
+    background-color: #fff;
+}
+#header2 {
+    height:95%;
+}
+#floating{
+	width:100%;
+    height:8%;
+    background:#fff;
+    position:fixed;
+    top:0;
+    z-index:10;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+}
+#floating1 {
+width:100%;
+    height:10%;
+    background:#fff;
+    position:fixed;
+    top:0;
+    z-index:10;
+    font-size: 78%;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+}
+#floating1 a img{
+	width:6.5%;
+	height:145%;
+	position: absolute;
+	left:46%;
+	top:-10%;
+}
+
+#floating1 ul li{
+	display:inline;
+	text-align: left;
+    float: left;
+    list-style: none;
+    padding: 1% 2% 1% 2%;
+}
+
+#right{
+	position: relative;
+	left:31%;
+	top:16%;
+	width:auto;
+}
+#left{
+	position: relative;
+	left:15%;
+	top:16%;
+	width:auto;
+}
+		</style>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+		<script type="text/javascript">
+		$(window).scroll(function () {
+  if ($(window).scrollTop() > $("#header2").height()) {
+    $("#floating1").show();
+    $("#logo").hide();
+  }
+  else {
+    $("#floating1").hide();
+    $("#logo").show();
+  }
+});
+		$( document ).ready( function() {
+            var $body = $('body'); //Cache this for performance
+
+            var setBodyScale = function() {
+                var scaleSource = $body.width(),
+                    scaleFactor = 0.10,                     
+                    maxScale = 600,
+                    minScale = 30; //Tweak these values to taste
+
+                var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
+
+                if (fontSize > maxScale) fontSize = maxScale;
+                if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
+
+                $('body').css('font-size', fontSize + '%');
+            }
+
+            $(window).resize(function(){
+                setBodyScale();
+            });
+
+            //Fire it when the page first loads:
+            setBodyScale();
+        });
+        $(window).load(function() {
+	$(".icon").hover(function () {
+                 $(this).children("div.grey").fadeOut(0);
+                 $(this).children("div.color").fadeIn(0);
+                },function () {
+                    $(this).children("div.color").fadeOut(0);
+                     $(this).children("div.grey").fadeIn(0);
+                    });
+            
+        $('.myImage').hover(function(){
+        	$('.myImage').css('opacity','1');
+        },function(){
+        	$('.myImage').css('opacity','0.75');
+        });
+        $('.myImage').click(function(){
+        	$('#pf').fadeOut(1000);
+        	$('#pfr').fadeIn(3000).animate({
+        		top:2,
+        	});
+        });
+    	});
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<img id="pf" src="images/pflar.png" style="position:absolute;top:0%;left:20%;height:85%;"/>
+			<img id="pfr" src="images/gecpclogo.png" style="position:absolute;top:83%;left:40%;width:18%;height:13%;z-index:11;"/>
+			<div id="social" style="position:fixed;top:13%;left:85%;width:25%;height:7%;z-index:100">
+	<div class="icon" style="position:relative;;top:0%;left:0%">
+	<div class="color" style="display:none"><a href="https://www.facebook.com/GECPhotoFlare" target="_blank"><img src="images/Facebookc.png"/></a></div>
+	<div class="grey"><a href="https://www.facebook.com/GECPhotoFlare" target="_blank"><img src="images/Facebook.png"/></a></div>
+	</div>
+	<div class="icon" style="position:relative;top:25%;left:0%">
+	<div class="color" style="display:none"><a href="https://twitter.com/GECPhotoFlare" target="_blank"><img src="images/Twitterc.png"/></a></div>
+	<div class="grey"><a href="https://twitter.com/GECPhotoFlare" target="_blank"><img src="images/Twitter.png" class="icon"/></a></div>
+	</div>
+	<div class="icon" style="position:relative;top:50%;left:0%">
+	<div class="grey">
+	<a href="https://plus.google.com/u/0/114081926972964025031"  target="_blank"><img src="images/Google+.png"/></a>
+	</div>
+	<div class="color" style="display:none"><a href="https://plus.google.com/u/0/114081926972964025031" target="_blank"><img src="images/Google+c.png"/></a></div>
+	</div>
+	</div>
+</div>
+		</div>
+  		<div id="header2"></div>
+  		<div style="display:none" id="floating"></div>
+  		<div style="display:none;" id="floating1">
+  			<div id="left">
+				<ul>
+					<li class="list"><a href="#home">home</a></li>
+					<li class="list"><a href="#competition">competition</a></li>
+					<li><a href="#expo">expo</a></li>
+				</ul>
+			</div>
+			<a href="#header"><img src="images/pflare_small.png"/></a>
+			<div id="right">
+				<ul>
+					<li class="list"><a href="#sponsors">sponsors</a></li>
+					<li class="list"><a href="#about">about</a></li>
+					<li><a href="#contacts">contacts</a></li>
+				</ul>
+			</div>
+  		</div>
+		<div>
+			<div id="home">
+			<p>
+				<br/><span style="font-size:170%">welcome!</span><br/>
+PhotoFlare is an international photography festival organised by the Photography Club of Goa College of Engineering, Goa, India. 
+It consists of an international <a href="#competition">competition</a>, an <a href="#expo">exhibition and talks and workshops</a>.<br/><br/>
+We've grown a lot over the last 3 years, and now, we're bigger, better and flashier than ever before! 
+So join us one more time, armed with your cameras, to celebrate the joys of clickography.
+</p>
+			</div>
+			<div id="competition" class="page">
+				<div class="content">
+				<h1>competition</h1>
+				<p>
+					It's said that the world is a different place as seen through a Photographer’s lens. The skill to compose a shot, to see the extra-ordinary in everyday stuff is a gift only a few possess. However, it’s a cultivated gift. A skill that is honed by continuously challenging oneself, by pushing one’s own self in a corner and striving to move ahead.
+					At PhotoFlare, we push you in such a corner. Following are the themes for PhotoFlare2013.<br/><span style="color:#a24"> You can submit your entries <a href="registration.php">here</a>.</span>
+				</p>
+				<div class="box" id="b1">
+				<h2>forgotten</h2>
+				<p>We live a fast paced life; one where every day brings with it new possibilities. But in this new way of life, have we left something behind?</p>
+				</div>
+				<div class="box" id="b2">
+				<h2>noise</h2>
+				<p>Noise is all around is. It could be in the form of the incessant drone of traffic or the visual mess of cluttered road signs or billboards. How do you see noise? Show us.
+</p>
+				</div>
+				<div class="box" id="b3">
+				<h2>in my dreams</h2>
+				<p>We are very particular about the entries we receive being un-edited in every way. But we thought "What the hell, almost everyone edits their photos nowadays!".
+So here's presenting PhotoFlare's first ever image-manipulation based theme! Show us how creative you can get with your image editing skills. 
+</p>
+				</div>
+				<div class="box" id="b4">
+				<h2>music video</h2>
+				<p>PhotoFlare's first stop-motion based theme. Stop motion is not only fun, but is comparatively easy to make and lets you get really creative. Make a stop-motion video of atleast 30 
+seconds based on a song of your choice, and send us the link to where ever you have uploaded it.
+</p>
+				</div>
+			</div>
+			</div>
+			<div id="expo" class="page">
+				<div class="content">
+				<h1>expo</h1>
+				<p>
+					The showcase event of PhotoFlare 2013 will be the expo. Nominated photos from each category will be displayed at the Kala Academy, Panjim-Goa on the 10th and 11th of May, 2013.
+
+					Various Workshops, lectures and other features will also be a part the expo. So mark your calendars now! You can view pics of the previous PhotoFlares <a href="photgallery/index.html">here</a>.
+				</p>
+				<img src="images/talks.png" id="i5"/>
+				<img src="images/workshops.png" id="i6"/>
+				<div class="box" id="b5">
+				<h2>talks</h2>
+				<p>We invite professional photographers to share their work and experiences with us. Details coming soon. If you'd like to share your experiences at PhotoFlare, please do <a href="#contacts">contact us!</a></p>
+				</div>
+				<div class="box" id="b6">
+				<h2>workshops</h2>
+				<p>Get your hands dirty with these hands on workshops conducted by professionals. Details coming soon. If you'd like to conduct a workshop at PhotoFlare, please do <a href="#contacts">contact us!</a></p>
+				</div>
+			</div>
+			</div>
+			<div id="sponsors" class="page">
+				<div class="content">
+				<h1>sponsors</h1>
+				<p>
+					A lot goes behind organizing a successful event. We are brimming with ideas and enthusiasm for PhotoFlare2013. But we need your help in making it happen.
+					 If you wish to be a part of the PhotoFlare family, feel free to <a href="#contacts">contact us</a>.
+					Watch this page for updates.
+				</p>
+			</div>
+			</div>
+			<div id="about" class="page">
+				<div class="content">
+				<h1>about</h1>
+				<p>
+					Started by a bunch of amateur photographers, we are the Photography Club of Goa Engineering College, Farmagudi, Goa. United by our love for Photography, we meet once in a while to discuss Photography, click pictures and learn from each other.
+
+					PhotoFlare is a manifestation of our collective love for everything photography. A chance to bring together Photographers from varied backgrounds and organize an event that gives a chance to showcase photographic talent and organize workshops, lectures and meetings which connect the amateurs to the professionals.
+
+					This is our fourth year and we hope to continue our ascend towards becoming one of the most awaited Photography events of the year. Hope to see you at PhotoFlare 2013. Keep Clicking!
+				</p>
+				<img id="team" src="images/team.jpg" style="position:absolute;top:52.5%;width:70%;height:45%;left:15%"/>
+			</div>
+			</div>
+			<div id="contacts" class="page">
+				<div class="content">
+				<h1>contacts</h1>
+				<p>
+					Feel free to contact us on team@gecphotoflare.org or contact:<br/><br/>
+<img src="images/aakash.png" id="i1"/>
+<img src="images/pranav.png" id="i2"/>
+<img src="images/sumanth.png" id="i3"/>
+<img src="images/pinto.png" id="i4"/>
+<div class="box" id="b1">
+<span style="color:#000">Aakash Rodrigues</span><br/> 
+<p>+91 9923675414<br/> 
+aakash@gecphotoflare.org<br/></p>	
+</div>
+<div class="box" id="b2">
+<span style="color:#000">Pranav Prem</span><br/>
+<p>+91 9158057895<br/> 
+pranav@gecphotoflare.org<br/></p>	
+</div>
+<div class="box" id="b7"
+<span style="color:#000">Sumanth Reddy</span><br/> 
+<p>+91 9545920952<br/> 
+sumanth@gecphotoflare.org<br/></p>	
+</div>
+<div class="box" id="b8">
+<span style="color:#000">Irvin Pinto</span><br/> 
+<p>+91 9890698752<br/> 
+irvin@gecphotoflare.org<br/></p>
+</div>
+<span style="position:absolute;top:92%;left:39%;color:#9a9;font-size:70%;font-family:awesome;z-index:1000">
+Website designed by <a href="https://www.facebook.com/TheBakaworks" style="color:#676">Bakaworks</a><br/>
+Illustrations by <a href="http://thegreedypencil.blogspot.com" style="color:#676">Nikhita Prabhudesai</a><br/>	
+</span>
+</p>
+			</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/work.js"></script>
